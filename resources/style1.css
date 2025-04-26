@@ -1,0 +1,129 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #222;
+    line-height: 1.6;
+    padding: 0 2rem;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .nav-items {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-items a:hover {
+    color: #0077cc;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  
+  section {
+    margin-bottom: 4rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 0.5rem;
+  }
+  
+  .about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  #about-me-text-container {
+    flex: 1 1 60%;
+  }
+  
+  .portrait {
+    width: 250px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  details.education {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  details summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+  }
+  
+  #skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    font-size: 2rem;
+  }
+  
+  .skill-icon {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+  }
+  
+  #contact-info-container {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 2rem 0;
+    color: #777;
+    border-top: 1px solid #eee;
+  }
+  
+  footer i.fa-heart {
+    color: crimson;
+  }
+  

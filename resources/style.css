@@ -1,0 +1,102 @@
+:root {
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+    --border-radius: 12px;
+    --font-color: #323232;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    padding: 0 var(--spacing-1);
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color);
+}
+
+section{
+    padding: var(--spacing-3) 0;}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-3) 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover{
+    color: blue
+
+}
+.about-me-container{
+    display: flex;
+    align-items: center;
+
+   
+}
+
+
+
+.portrait{
+    width: 300px;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: var(--spacing-4);
+}
+
+#skills-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 3em;
+}
+
+.skill-icon{
+    width: 50px;
+    height: auto;
+    
+}
+
+#contact-info-container{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 2em;
+}
+
+footer{
+    text-align: center;
+    margin-top: auto;
+    padding: var(--spacing-2) 0;
+}
+
+.fa-heart{
+    color: red;
+}
+
+.education a{
+    text-decoration:underline;
+    color: blue;
+}
+
+.education a:hover{
+    text-decoration:none;
+}

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
   }
   
   body {
@@ -11,6 +12,7 @@
     color: #222;
     line-height: 1.6;
     padding: 0 2rem;
+    font-size: 1rem;
   }
   
   header {
@@ -134,4 +136,71 @@
   footer i.fa-heart {
     color: crimson;
   }
+
+
   
+  #ama-console-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000; /* deep black for terminal vibe */
+    color: #00ff00; /* neon green text, classic hacker style */
+    /* padding: 1rem; */
+    height: 300px; /* or whatever height you want */
+    overflow-y: auto; /* allows scrolling if text gets long */
+    font-family: 'Courier New', Courier, monospace; /* monospaced font for terminal look */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    font-size: 1.2rem; /* larger font for better visibility */
+}
+
+  #console-header{
+    width: 100%;
+    height: 50px;
+    background-color: #6b6b6b;
+    color: white;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#console-body{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#console-input-container input{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: #00ff00; /* neon green text */
+    font-family: 'Courier New', Courier, monospace; /* monospaced font for terminal look */
+    font-size: 1.2rem; /* larger font for better visibility */
+    outline: none; /* remove default outline */
+}
+
+#console-input-container input::placeholder {
+  color: #00ff008f; /* neon green */
+  font-family: 'Courier New', Courier, monospace; /* optional: match the input font */
+  font-size: 1.em; /* optional: adjust size for better visibility */
+}
+#console-body::after {
+    content: ">";
+    color: #00ff00; /* neon green */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+
+/* Blinking animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

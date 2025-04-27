@@ -61,7 +61,7 @@ function getBotResponse(input) {
     ).innerHTML += `> BOT: ${questionAndAnswerMap.get(input)}<br>`;
   } else {
     document.getElementById("console-body").innerHTML +=
-      "I’m not sure how to answer that yet!<br>";
+      "> BOT: I’m not sure how to answer that yet!<br>";
   }
 }
 

@@ -274,7 +274,7 @@
         width: 90%; /* Make the image responsive */
     }
 
-    #console-body p{
+    #console-body{
       font-size: 0.8em;
     }
 
@@ -315,8 +315,10 @@
         gap: 0.5rem;
     }
 
-    #console-body p{
+    #console-body{
       font-size: 0.75em;
     }
+
+
 
   }

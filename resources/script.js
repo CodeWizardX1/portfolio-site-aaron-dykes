@@ -39,10 +39,11 @@ function displayInputToConsole(event) {
     if (userInput.value === "clear") {
       clearConsole();
     } else {
+      const inputValue = userInput.value; // Store the input value
       document.getElementById(
         "console-body"
-      ).innerHTML += `${userInput.value}<br>`;
-      getBotResponse();
+      ).innerHTML += `${inputValue}<br>`;
+      setTimeout(() => getBotResponse(inputValue), 2000); // Add a 2-second delay before bot response
     }
     userInput.value = "";
   }
@@ -52,8 +53,8 @@ function clearConsole() {
   document.getElementById("console-body").innerHTML = "";
 }
 
-function getBotResponse() {
-  let input = userInput.value.toLowerCase()
+function getBotResponse(input) {
+  input = input.toLowerCase();
   if (questionAndAnswerMap.has(input)) {
     document.getElementById(
       "console-body"

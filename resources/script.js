@@ -36,7 +36,7 @@ questionAndAnswerMap.set("bye", "Goodbye! Thanks for stopping by!");
 
 function displayInputToConsole(event) {
   if (event.key === "Enter") {
-    if (userInput.value === "clear") {
+    if (userInput.value.toLowerCase() === "clear") {
       clearConsole();
     } else {
       const inputValue = userInput.value; // Store the input value

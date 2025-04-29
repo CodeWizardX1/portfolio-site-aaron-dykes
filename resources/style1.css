@@ -1,324 +1,334 @@
 /* Reset & base styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fdfdfd;
-    color: #222;
-    line-height: 1.6;
-    padding: 0 2rem;
-    font-size: 1.1rem;
-  }
-  
-  header {
-    background-color: #fff;
-    padding: 1rem 0;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  #logo {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #222;
-  }
-  
-  .nav-items {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-  }
-  
-  .nav-items a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .nav-items a:hover {
-    color: #0077cc;
-  }
-  
-  main {
-    max-width: 1000px;
-    margin: 2rem auto;
-  }
-  
-  section {
-    margin-bottom: 4rem;
-  }
-  
-  h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    color: #333;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 0.5rem;
-  }
-  
-  .about-me-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-  }
-  
-  #about-me-text-container {
-    flex: 1 1 60%;
-  }
-  
-  .portrait {
-    width: 300px;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  details.education {
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  }
-
-  details.project{
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  }
-  
-  details summary {
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 0.5rem;
-  }
-  
-  #skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    font-size: 2rem;
-  }
-  
-  .skill-icon {
-    width: 2rem;
-    height: 2rem;
-    object-fit: contain;
-  }
-  
-  #contact-info-container {
-    display: flex;
-    gap: 1.5rem;
-    font-size: 1.8rem;
-    margin-top: 1rem;
-  }
-  
-  footer {
-    text-align: center;
-    font-size: 0.9rem;
-    padding: 2rem 0;
-    color: #777;
-    border-top: 1px solid #eee;
-  }
-  
-  footer i.fa-heart {
-    color: crimson;
-  }
-
-
-  
-  #ama-console-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #000000; /* deep black for terminal vibe */
-    color: #00ff00; /* neon green text, classic hacker style */
-    /* padding: 1rem; */
-    height: 300px; /* or whatever height you want */
-    overflow-y: auto; /* allows scrolling if text gets long */
-    font-family: 'Courier New', Courier, monospace; /* monospaced font for terminal look */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    font-size: 1.2rem; /* larger font for better visibility */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  #console-header{
-    width: 100%;
-    height: 50px;
-    background-color: #6b6b6b;
-    color: white;
-    padding: 0.75rem 1rem;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    margin-bottom: 10px;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  line-height: 1.6;
+  padding: 0 2rem;
+  font-size: 1.1rem;
 }
 
-#console-body{
-    flex-grow: 1;
-    overflow-y: auto;
+header {
+  background-color: #fff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-#console-input-container input{
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 4px;
-    background-color: black;
-    color: #00ff00; /* neon green text */
-    font-family: 'Courier New', Courier, monospace; /* monospaced font for terminal look */
-    font-size: 1.2rem; /* larger font for better visibility */
-    outline: none; /* remove default outline */
+#logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-items a:hover {
+  color: #0077cc;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 0.5rem;
+}
+
+.about-me-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+#about-me-text-container {
+  flex: 1 1 60%;
+}
+
+.portrait {
+  width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+details.education {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+details.project {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+#skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  font-size: 2rem;
+}
+
+.skill-icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+#contact-info-container {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 2rem 0;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+footer i.fa-heart {
+  color: crimson;
+}
+
+#ama-console-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000; /* deep black for terminal vibe */
+  color: #00ff00; /* neon green text, classic hacker style */
+  /* padding: 1rem; */
+  height: 300px; /* or whatever height you want */
+  overflow-y: auto; /* allows scrolling if text gets long */
+  font-family: "Courier New", Courier, monospace; /* monospaced font for terminal look */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  font-size: 1.2rem; /* larger font for better visibility */
+}
+
+#console-header {
+  width: 100%;
+  height: 50px;
+  background-color: #6b6b6b;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#console-body {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+#console-input-container input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  color: #00ff00; /* neon green text */
+  font-family: "Courier New", Courier, monospace; /* monospaced font for terminal look */
+  font-size: 1.2rem; /* larger font for better visibility */
+  outline: none; /* remove default outline */
 }
 
 #console-input-container input::placeholder {
   color: #00ff008f; /* neon green */
-  font-family: 'Courier New', Courier, monospace; /* optional: match the input font */
-  font-size: 1.em; /* optional: adjust size for better visibility */
+  font-family: "Courier New", Courier, monospace; /* optional: match the input font */
+  font-size: 1em; /* optional: adjust size for better visibility */
 }
 #console-body::after {
-    content: ">";
-    color: #00ff00; /* neon green */
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2rem;
-    margin-right: 0.5rem;
-    animation: blink 1s steps(2, start) infinite;
+  content: ">";
+  color: #00ff00; /* neon green */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  animation: blink 1s steps(2, start) infinite;
 }
-
 
 /* Blinking animation */
 @keyframes blink {
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 }
 
+#hamburger-menu,
+#hamburger-icon {
+  display: none; /* Hide by default */
+}
 
-
- /* Media Queries for Responsive Design */
+/* Media Queries for Responsive Design */
 
 @media only screen and (max-width: 890px) {
-    body {
-        padding: 0 1rem;
-    }
-  
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-  
-    #about-me-text-container {
-        flex: 1 1 100%;
-    }
-  
-    #skills-container {
-        font-size: 1.5rem;
-    }
-  
-    #contact-info-container {
-        font-size: 1.5rem;
-    }
-  
-    footer {
-        font-size: 0.8rem;
-    }
-
-    img.portrait {
-        align-self: center;
-        margin: 0 auto; /* Center the image horizontally */
-        display: block; /* Ensure the image is treated as a block element */
-        width: 70%; /* Make the image responsive */
-    }
-
+  body {
+    padding: 0 1rem;
   }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #about-me-text-container {
+    flex: 1 1 100%;
+  }
+
+  #skills-container {
+    font-size: 1.5rem;
+  }
+
+  #contact-info-container {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  img.portrait {
+    align-self: center;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is treated as a block element */
+    width: 70%; /* Make the image responsive */
+  }
+}
 
 @media only screen and (max-width: 480px) {
-    body {
-        padding: 0 0.5rem;
-    }
-  
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-  
-    #about-me-text-container {
-        flex: 1 1 100%;
-    }
-  
-    #skills-container {
-        font-size: 1.2rem;
-    }
-  
-    #contact-info-container {
-        font-size: 1.2rem;
-    }
-  
-    footer {
-        font-size: 0.7rem;
-    }
-
-    img.portrait {
-        width: 90%; /* Make the image responsive */
-    }
-
-    #console-body{
-      font-size: 0.8em;
-    }
-
+  body {
+    padding: 0 0.5rem;
   }
 
-  @media only screen and (max-width: 405px){
-    body {
-        padding: 0 0.5rem;
-    }
-  
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-  
-    #about-me-text-container {
-        flex: 1 1 100%;
-    }
-  
-    #skills-container {
-        font-size: 1.2rem;
-    }
-  
-    #contact-info-container {
-        font-size: 1.2rem;
-    }
-  
-    footer {
-        font-size: 0.7rem;
-    }
-
-    img.portrait {
-        width: 90%; /* Make the image responsive */
-    }
-
-    .nav-items {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    #console-body{
-      font-size: 0.75em;
-    }
-
-
-
+  header {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  #about-me-text-container {
+    flex: 1 1 100%;
+  }
+
+  #skills-container {
+    font-size: 1.2rem;
+  }
+
+  #contact-info-container {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+
+  img.portrait {
+    width: 90%; /* Make the image responsive */
+  }
+
+  #console-body {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  body {
+    padding: 0 0.5rem;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  #about-me-text-container {
+    flex: 1 1 100%;
+  }
+
+  #skills-container {
+    font-size: 1.2rem;
+  }
+
+  #contact-info-container {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+
+  img.portrait {
+    width: 90%; /* Make the image responsive */
+  }
+
+  .nav-items {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #console-body {
+    font-size: 0.75em;
+  }
+
+  nav {
+    display: none; /* Hide the navigation bar on small screens */
+  }
+
+  #hamburger-icon {
+    display: block; /* Show the hamburger menu icon */
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 15px;
+  }
+
+  #hamburger-menu:checked + nav {
+    display: block;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}

@@ -121,7 +121,7 @@ details summary {
 #contact-info-container {
   display: flex;
   gap: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin-top: 1rem;
 }
 
@@ -228,7 +228,7 @@ footer i.fa-heart {
   }
 
   #contact-info-container {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   footer {
@@ -262,7 +262,7 @@ footer i.fa-heart {
   }
 
   #contact-info-container {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
   }
 
   footer {
@@ -296,7 +296,7 @@ footer i.fa-heart {
   }
 
   #contact-info-container {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
   }
 
   footer {

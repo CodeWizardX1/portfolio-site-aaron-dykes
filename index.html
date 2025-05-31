@@ -1,187 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fc4b640fc7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./resources/style1.css" type="text/css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./resources/images/favicon-32x32.png"
+    />
+    <script src="./resources/script.js" defer></script>
+    <title>Aaron M. Dykes</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/fc4b640fc7.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./resources/style1.css" type="text/css" />
-  <link rel="icon" type="image/png" href="./resources/images/favicon-32x32.png" />
-  <script src="./resources/script.js" defer></script>
-  <title>Aaron M. Dykes</title>
-</head>
+  <body>
+    <!-- Header section containing the website's logo and navigation menu -->
+    <header>
+      <!-- Website logo -->
+      <h2 id="logo">Aaron M. Dykes</h2>
 
-<body>
-  <!-- Header section containing the website's logo and navigation menu -->
-  <header>
-    <!-- Website logo -->
-    <h2 id="logo">Aaron M. Dykes</h2>
+      <!-- Hamburger menu icon for mobile navigation -->
+      <label for="hamburger-menu" id="hamburger-icon">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </label>
+      <!-- Checkbox for toggling the mobile navigation menu -->
+      <input type="checkbox" id="hamburger-menu" title="Mobile Nav" />
 
-    <!-- Hamburger menu icon for mobile navigation -->
-    <label for="hamburger-menu" id="hamburger-icon">
-      <i class="fa-solid fa-bars" id="menu-icon"></i>
-    </label>
-    <!-- Checkbox for toggling the mobile navigation menu -->
-    <input type="checkbox" id="hamburger-menu" title="Mobile Nav">
+      <!-- Navigation menu -->
+      <nav>
+        <ul class="nav-items">
+          <!-- Navigation links to different sections of the page -->
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- Navigation menu -->
-    <nav>
-      <ul class="nav-items">
-        <!-- Navigation links to different sections of the page -->
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <section id="about-me">
+        <div class="about-me-container">
+          <div id="about-me-text-container">
+            <h2>About Me</h2>
+            <p>
+              Hey, I’m Aaron — a self-taught developer from Boston with a
+              passion for building clean, smart, and purposeful applications.
+              I’m currently focused on full-stack JavaScript, but I’ve got a
+              solid Python foundation and a deep love for computer science
+              fundamentals like algorithms, databases, and system design.
+            </p>
+            <br />
 
-  <main>
-    <section id="about-me">
-      <div class="about-me-container">
-        <div id="about-me-text-container">
-          <h2>About Me</h2>
+            <p>
+              I didn’t take the traditional path into tech — instead, I built my
+              own curriculum using Codecademy, Udemy, and a stack of books,
+              fueled by caffeine, curiosity, and cold plunges (seriously,
+              face-dipping in ice water beats coffee any day). I’m not learning
+              to land a job — I’m learning to build my own apps, like Poolio, a
+              savings and investing platform for groups. Every line of code I
+              write moves me closer to that vision.
+            </p>
+            <br />
+
+            <p>
+              When I’m not knee-deep in JavaScript, Python, or PostgreSQL, I’m
+              probably optimizing my study setup with noise-canceling headphones
+              and fasting to stay laser-focused. I believe programming is a
+              superpower, and I’m here to wield it with precision, creativity,
+              and just a bit of fun.
+            </p>
+          </div>
+          <img
+            src="./resources/images/portraitOfMe.jpg"
+            alt="photo of Aaron Dykes"
+            class="portrait"
+          />
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <details class="project">
+          <summary>Jammming Web Application</summary>
           <p>
-            Hey, I’m Aaron — a self-taught developer from Boston with a passion
-            for building clean, smart, and purposeful applications. I’m
-            currently focused on full-stack JavaScript, but I’ve got a solid
-            Python foundation and a deep love for computer science
-            fundamentals like algorithms, databases, and system design.
-          </p><br>
-
-          <p>
-            I didn’t take the traditional path into tech — instead, I built my
-            own curriculum using Codecademy, Udemy, and a stack of books,
-            fueled by caffeine, curiosity, and cold plunges (seriously,
-            face-dipping in ice water beats coffee any day). I’m not learning
-            to land a job — I’m learning to build my own apps, like Poolio, a
-            savings and investing platform for groups. Every line of code I
-            write moves me closer to that vision.
-          </p><br>
-
-          <p>
-            When I’m not knee-deep in JavaScript, Python, or PostgreSQL, I’m
-            probably optimizing my study setup with noise-canceling headphones
-            and fasting to stay laser-focused. I believe programming is a
-            superpower, and I’m here to wield it with precision, creativity,
-            and just a bit of fun.
+            Jammming is a React web application that allows users to search for songs
+            and create custom playlists using the Spotify API. It features a
+            responsive design, user authentication, and seamless integration
+            with Spotify's music library. Click the link below to explore the
+            live project. Note that you will need to log in to your Spotify
+            account to use the app.
           </p>
-        </div>
-        <img src="./resources/images/portraitOfMe.jpg" alt="photo of Aaron Dykes" class="portrait" />
-      </div>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <details class="project">
-        <summary>Coming Soon</summary>
-      </details>
-      <details class="project">
-        <summary>Coming Soon</summary>
-      </details>
-      <details class="project">
-        <summary>Coming Soon</summary>
-      </details>
-    </section>
-    <section id="education">
-      <h2>Education</h2>
-      <details class="education">
-        <summary>Computer Science Career Path</summary>
-        <p>
-          Through Codecademy’s Computer Science Career Path, I built a strong
-          foundation in programming and computational thinking using Python. I
-          learned essential data structures like lists, stacks, and queues,
-          and explored how computers manage memory through algorithms. The
-          program also introduced key computer science topics such as
-          databases with PostgreSQL, computer architecture fundamentals, and
-          discrete mathematics. These lessons were reinforced with hands-on
-          projects and quizzes that strengthened both my problem-solving
-          skills and practical coding ability.
-        </p>
-        <p>
-          <a href="./resources/images/CompSciCertificate.pdf" target="_blank">View Certificate of Completion</a>
-        </p>
-      </details>
-
-      <details class="education">
-        <summary>Full-Stack Engineer Career Path</summary>
-        <p>In Progress</p>
-      </details>
-
-      <details class="education">
-        <summary>Intermediate Python 3</summary>
-        <p>
-          As part of my continued learning on Codecademy, I completed the
-          Intermediate Python course, which deepened my understanding of core
-          programming concepts and best practices. I gained hands-on
-          experience with advanced function arguments, variable scope,
-          higher-order functions, object-oriented programming, and unit
-          testing using Python’s built-in unittest framework. The course also
-          covered iterators, generators, and specialized collections like sets
-          and defaultdict, along with effective resource management using
-          context managers. Through a series of projects and quizzes, I
-          sharpened my skills in writing clean, modular, and testable Python
-          code.
-        </p>
-        <p>
-          <a href="./resources/images/IntermediatePythonCertificate.pdf" target="_blank">View Certificate of
-            Completion</a>
-        </p>
-      </details>
-    </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <div id="skills-container">
-        <i class="fa-brands fa-python"></i>
-        <i class="fa-brands fa-js"></i>
-        <i class="fa-brands fa-html5"></i>
-        <i class="fa-brands fa-css3-alt"></i>
-        <i class="fa-solid fa-database"></i>
-        <i class="fa-brands fa-git"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-solid fa-terminal"></i>
-        <img src="./resources/images/postgresql.svg" alt="postgresql logo" class="skill-icon" />
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Want to get in touch? Feel free to reach out!</p>
-      <div id="contact-info-container">
-        <a href="https://www.linkedin.com/in/aaron-dykes-/" title="LinkedIn Profile"><i
-            class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/CodeWizardX1" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:aaronmdykes@gmail.com" title="Email Address"><i class="fa-solid fa-envelope"></i></a>
-      </div>
-    </section>
-
-    <section id="askmeanything">
-      <h2>Ask Me Anything</h2>
-      <div id="ama-console-container">
-        <div id="console-header">
-          <h3>Aaron's Dev Console</h3>
-        </div>
-
-        <div id="console-body">
+          <br />
           <p>
-            > Welcome! Ask me anything about my work, projects, skills, or
-            interests.
+            <a
+              href="https://jammming123.netlify.app/"
+              target="_blank"
+              rel="noopener"
+              >View Live Project</a
+            >
           </p>
-          <p>> You can type 'clear' to clear the console</p>
+        </details>
+        <details class="project">
+          <summary>Coming Soon</summary>
+        </details>
+        <details class="project">
+          <summary>Coming Soon</summary>
+        </details>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <details class="education">
+          <summary>Computer Science Career Path</summary>
+          <p>
+            Through Codecademy’s Computer Science Career Path, I built a strong
+            foundation in programming and computational thinking using Python. I
+            learned essential data structures like lists, stacks, and queues,
+            and explored how computers manage memory through algorithms. The
+            program also introduced key computer science topics such as
+            databases with PostgreSQL, computer architecture fundamentals, and
+            discrete mathematics. These lessons were reinforced with hands-on
+            projects and quizzes that strengthened both my problem-solving
+            skills and practical coding ability.
+          </p>
+          <br />
+          <p>
+            <a href="./resources/images/CompSciCertificate.pdf" target="_blank"
+              >View Certificate of Completion</a
+            >
+          </p>
+        </details>
+
+        <details class="education">
+          <summary>Full-Stack Engineer Career Path</summary>
+          <p>In Progress</p>
+        </details>
+
+        <details class="education">
+          <summary>Intermediate Python 3</summary>
+          <p>
+            As part of my continued learning on Codecademy, I completed the
+            Intermediate Python course, which deepened my understanding of core
+            programming concepts and best practices. I gained hands-on
+            experience with advanced function arguments, variable scope,
+            higher-order functions, object-oriented programming, and unit
+            testing using Python’s built-in unittest framework. The course also
+            covered iterators, generators, and specialized collections like sets
+            and defaultdict, along with effective resource management using
+            context managers. Through a series of projects and quizzes, I
+            sharpened my skills in writing clean, modular, and testable Python
+            code.
+          </p>
+          <br />
+          <p>
+            <a
+              href="./resources/images/IntermediatePythonCertificate.pdf"
+              target="_blank"
+              >View Certificate of Completion</a
+            >
+          </p>
+        </details>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-container">
+          <i class="fa-brands fa-python"></i>
+          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-solid fa-database"></i>
+          <i class="fa-brands fa-git"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-solid fa-terminal"></i>
+          <img
+            src="./resources/images/postgresql.svg"
+            alt="postgresql logo"
+            class="skill-icon"
+          />
         </div>
+      </section>
 
-        <div id="console-input-container">
-          <label for="console-input"></label>
-          <input type="text" name="console_input" id="console-input" title="Console Input"
-            placeholder="Type your question here..." />
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Want to get in touch? Feel free to reach out!</p>
+        <div id="contact-info-container">
+          <a
+            href="https://www.linkedin.com/in/aaron-dykes-/"
+            title="LinkedIn Profile"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/CodeWizardX1" title="GitHub Profile"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:aaronmdykes@gmail.com" title="Email Address"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer>
-    <p>Made with <i class="fa-solid fa-heart"></i> in Boston, MA</p>
-  </footer>
-</body>
+      <section id="askmeanything">
+        <h2>Ask Me Anything</h2>
+        <div id="ama-console-container">
+          <div id="console-header">
+            <h3>Aaron's Dev Console</h3>
+          </div>
 
+          <div id="console-body">
+            <p>
+              > Welcome! Ask me anything about my work, projects, skills, or
+              interests.
+            </p>
+            <p>> You can type 'clear' to clear the console</p>
+          </div>
+
+          <div id="console-input-container">
+            <label for="console-input"></label>
+            <input
+              type="text"
+              name="console_input"
+              id="console-input"
+              title="Console Input"
+              placeholder="Type your question here..."
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with <i class="fa-solid fa-heart"></i> in Boston, MA</p>
+    </footer>
+  </body>
 </html>

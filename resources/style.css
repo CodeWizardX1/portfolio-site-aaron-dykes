@@ -183,6 +183,9 @@ body {
   border: none;
   cursor: pointer;
   z-index: 1001;
+  position: relative;
+  padding: 5px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .hamburger span {
@@ -191,6 +194,8 @@ body {
   background: var(--text-primary);
   border-radius: 10px;
   transition: all 0.3s ease;
+  display: block;
+  position: relative;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -1010,6 +1015,7 @@ body.loaded .hero-section {
     justify-content: center;
     align-items: center;
     transition: right 0.3s ease;
+    z-index: 9997;
   }
   
   .nav-items.active {
@@ -1069,5 +1075,25 @@ body.loaded .hero-section {
   
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+  
+  /* Ensure hamburger stays visible on small screens */
+  .hamburger {
+    display: flex !important;
+    width: 35px;
+    height: 30px;
+    padding: 5px;
+    z-index: 9999;
+  }
+  
+  /* Increase header z-index for mobile */
+  .glass-header {
+    z-index: 9998;
+    padding: 0.75rem 1rem;
+  }
+  
+  /* Adjust logo size for small screens */
+  #logo {
+    font-size: 1.5rem;
   }
 }

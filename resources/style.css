@@ -89,8 +89,8 @@ body {
 /* Glass Effect Mixin */
 .glass-card {
   background: var(--glass-bg);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   border-radius: 15px;
   box-shadow: var(--shadow-xl);
@@ -103,8 +103,8 @@ body {
   width: 100%;
   padding: 1rem 2rem;
   background: rgba(10, 10, 10, 0.8);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--glass-border);
   z-index: 1000;
   display: flex;

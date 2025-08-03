@@ -3,250 +3,386 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aaron M. Dykes - Full Stack Developer Portfolio" />
     <script
       src="https://kit.fontawesome.com/fc4b640fc7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./resources/style1.css" type="text/css" />
+    <link rel="stylesheet" href="./resources/style.css" type="text/css" />
     <link
       rel="icon"
       type="image/png"
       href="./resources/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <script src="./resources/script.js" defer></script>
-    <title>Aaron M. Dykes</title>
+    <title>Aaron M. Dykes | Full Stack Developer</title>
   </head>
 
-  <body>
-    <!-- Header section containing the website's logo and navigation menu -->
-    <header>
-      <!-- Website logo -->
-      <h2 id="logo">Aaron M. Dykes</h2>
+  <body class="loaded">
+    <!-- Particle Background -->
+    <div id="particles-bg"></div>
+    
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
 
-      <!-- Hamburger menu icon for mobile navigation -->
-      <label for="hamburger-menu" id="hamburger-icon">
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-      </label>
-      <!-- Checkbox for toggling the mobile navigation menu -->
-      <input type="checkbox" id="hamburger-menu" title="Mobile Nav" />
+    <!-- Header section with glass effect -->
+    <header class="glass-header">
+      <!-- Logo with gradient text -->
+      <h2 id="logo" class="gradient-text">AMD</h2>
 
-      <!-- Navigation menu -->
-      <nav>
+      <!-- Modern hamburger menu -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation with glass effect -->
+      <nav id="nav-menu">
         <ul class="nav-items">
-          <!-- Navigation links to different sections of the page -->
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="about-me">
-        <div class="about-me-container">
-          <div id="about-me-text-container">
-            <h2>About Me</h2>
-            <p>
-              Hey, I’m Aaron — a self-taught developer from Boston with a
-              passion for building clean, smart, and purposeful applications.
-              I’m currently focused on full-stack JavaScript, but I’ve got a
-              solid Python foundation and a deep love for computer science
-              fundamentals like algorithms, databases, and system design.
-            </p>
-            <br />
-
-            <p>
-              I didn’t take the traditional path into tech — instead, I built my
-              own curriculum using Codecademy, Udemy, and a stack of books,
-              fueled by caffeine, curiosity, and cold showers. I’m not learning
-              to land a job (although I'm always open to job opportunities), rather what drives me, is learning to build my own apps, like
-              <a href="https://poolio.fund/" target="_blank" rel="noopener"
-                >Poolio</a
-              >, a savings and investing platform for groups. Every line of code
-              I write moves me closer to that vision.
-            </p>
-            <br />
-
-            <p>
-              When I’m not knee-deep in JavaScript, Python, or PostgreSQL, I’m
-              probably optimizing my study setup with noise-canceling headphones
-              and fasting to stay laser-focused. I believe programming is a
-              superpower, and I’m here to wield it with precision, creativity,
-              and just a bit of fun.
-            </p>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="hero-greeting">Hello, I'm</span>
+            <span class="hero-name typewriter">Aaron M. Dykes</span>
+          </h1>
+          <p class="hero-subtitle gradient-text">Full Stack Developer</p>
+          <p class="hero-description">Building clean, smart, and purposeful applications</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
           </div>
-          <img
-            src="./resources/images/portraitOfMe.jpg"
-            alt="photo of Aaron Dykes"
-            class="portrait"
-          />
         </div>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <details class="project">
-          <summary>Jammming Web Application</summary>
-          <p>
-            Jammming is a React web application that allows users to search for
-            songs and create custom playlists using the Spotify API. It features
-            a responsive design, user authentication, and seamless integration
-            with Spotify's music library. Click the link below to explore the
-            live project. Note that you will need to log in to your Spotify
-            account to use the app.
-          </p>
-          <br />
-          <p>
-            <a
-              href="https://jammming123.netlify.app/"
-              target="_blank"
-              rel="noopener"
-              >View Live Project</a
-            >
-          </p>
-        </details>
-        <details class="project">
-          <summary>Reddit Minimal</summary>
-          <p>
-            Reddit Minimal is a clean, streamlined Reddit client built with React and Redux that focuses on delivering a distraction-free browsing experience. The application fetches data from Reddit's JSON API to display posts with a minimalist interface, featuring smooth animations, responsive design, and intuitive navigation. Users can browse different subreddits, view post details, and enjoy a clutter-free alternative to the traditional Reddit interface that prioritizes readability and performance.
-          </p>
-          <br />
-          <p>
-            <a
-              href="https://redditminimal-app.netlify.app/"
-              target="_blank"
-              rel="noopener"
-              >View Live Project</a
-            >
-          </p>
-        </details>
-        <details class="project">
-          <summary>Coming Soon</summary>
-        </details>
-
-      </section>
-      <section id="education">
-        <h2>Education</h2>
-        <details class="education">
-          <summary>Computer Science Career Path</summary>
-          <p>
-            Through Codecademy’s Computer Science Career Path, I built a strong
-            foundation in programming and computational thinking using Python. I
-            learned essential data structures like lists, stacks, and queues,
-            and explored how computers manage memory through algorithms. The
-            program also introduced key computer science topics such as
-            databases with PostgreSQL, computer architecture fundamentals, and
-            discrete mathematics. These lessons were reinforced with hands-on
-            projects and quizzes that strengthened both my problem-solving
-            skills and practical coding ability.
-          </p>
-          <br />
-          <p>
-            <a href="./resources/images/CompSciCertificate.pdf" target="_blank"
-              >View Certificate of Completion</a
-            >
-          </p>
-        </details>
-
-        <details class="education">
-          <summary>Full-Stack Engineer Career Path</summary>
-          <p>In Progress</p>
-        </details>
-
-        <details class="education">
-          <summary>Intermediate Python 3</summary>
-          <p>
-            As part of my continued learning on Codecademy, I completed the
-            Intermediate Python course, which deepened my understanding of core
-            programming concepts and best practices. I gained hands-on
-            experience with advanced function arguments, variable scope,
-            higher-order functions, object-oriented programming, and unit
-            testing using Python’s built-in unittest framework. The course also
-            covered iterators, generators, and specialized collections like sets
-            and defaultdict, along with effective resource management using
-            context managers. Through a series of projects and quizzes, I
-            sharpened my skills in writing clean, modular, and testable Python
-            code.
-          </p>
-          <br />
-          <p>
-            <a
-              href="./resources/images/IntermediatePythonCertificate.pdf"
-              target="_blank"
-              >View Certificate of Completion</a
-            >
-          </p>
-        </details>
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <div id="skills-container">
-          <i class="fa-brands fa-python"></i>
-          <i class="fa-brands fa-js"></i>
-          <i class="fa-brands fa-html5"></i>
-          <i class="fa-brands fa-css3-alt"></i>
-          <i class="fa-solid fa-database"></i>
-          <i class="fa-brands fa-git"></i>
-          <i class="fa-brands fa-github"></i>
-          <i class="fa-solid fa-terminal"></i>
-          <img
-            src="./resources/images/postgresql.svg"
-            alt="postgresql logo"
-            class="skill-icon"
-          />
+        <div class="scroll-indicator">
+          <div class="mouse"></div>
+          <p>Scroll Down</p>
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Want to get in touch? Feel free to reach out!</p>
-        <div id="contact-info-container">
-          <a
-            href="https://www.linkedin.com/in/aaron-dykes-/"
-            title="LinkedIn Profile"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/CodeWizardX1" title="GitHub Profile"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="mailto:aaronmdykes@gmail.com" title="Email Address"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">
+            <span class="gradient-text">About</span> Me
+          </h2>
+          <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+              <div class="about-card glass-card">
+                <p>
+                  Hey, I'm Aaron — a self-taught developer from Boston with a
+                  passion for building clean, smart, and purposeful applications.
+                  I'm currently focused on full-stack JavaScript, but I've got a
+                  solid Python foundation and a deep love for computer science
+                  fundamentals like algorithms, databases, and system design.
+                </p>
+                <p>
+                  I didn't take the traditional path into tech — instead, I built my
+                  own curriculum using Codecademy, Udemy, and a stack of books,
+                  fueled by caffeine, curiosity, and cold showers. What drives me is learning to build my own apps, like
+                  <a href="https://poolio.fund/" target="_blank" rel="noopener" class="link-highlight"
+                    >Poolio</a
+                  >, a savings and investing platform for groups.
+                </p>
+                <p>
+                  When I'm not knee-deep in JavaScript, Python, or PostgreSQL, I'm
+                  probably optimizing my study setup with noise-canceling headphones
+                  and fasting to stay laser-focused. I believe programming is a
+                  superpower, and I'm here to wield it with precision, creativity,
+                  and just a bit of fun.
+                </p>
+              </div>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+              <div class="image-container">
+                <img
+                  src="./resources/images/portraitOfMe.jpg"
+                  alt="Aaron Dykes"
+                  class="portrait"
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="askmeanything">
-        <h2>Ask Me Anything</h2>
-        <div id="ama-console-container">
-          <div id="console-header">
-            <h3>Aaron's Dev Console</h3>
-          </div>
+      <!-- Projects Section -->
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">
+            My <span class="gradient-text">Projects</span>
+          </h2>
+          <div class="projects-grid">
+            <div class="project-card glass-card" data-aos="flip-left">
+              <div class="project-front">
+                <div class="project-icon">
+                  <i class="fa-brands fa-spotify"></i>
+                </div>
+                <h3>Jammming</h3>
+                <p class="project-tech">React • Spotify API • OAuth</p>
+              </div>
+              <div class="project-back">
+                <h3>Jammming</h3>
+                <p>
+                  A React web app that allows users to search for songs and create 
+                  custom playlists using the Spotify API. Features responsive design, 
+                  user authentication, and seamless Spotify integration.
+                </p>
+                <div class="project-links">
+                  <a href="https://jammming123.netlify.app/" target="_blank" class="btn-small">
+                    <i class="fa-solid fa-external-link"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
 
-          <div id="console-body">
-            <p>
-              > Welcome! Ask me anything about my work, projects, skills, or
-              interests.
-            </p>
-            <p>> You can type 'clear' to clear the console</p>
-          </div>
+            <div class="project-card glass-card" data-aos="flip-left" data-aos-delay="100">
+              <div class="project-front">
+                <div class="project-icon">
+                  <i class="fa-brands fa-reddit"></i>
+                </div>
+                <h3>Reddit Minimal</h3>
+                <p class="project-tech">React • Redux • Reddit API</p>
+              </div>
+              <div class="project-back">
+                <h3>Reddit Minimal</h3>
+                <p>
+                  A clean Reddit client built with React and Redux, featuring smooth 
+                  animations, responsive design, and a minimalist interface that 
+                  prioritizes readability and performance.
+                </p>
+                <div class="project-links">
+                  <a href="https://redditminimal-app.netlify.app/" target="_blank" class="btn-small">
+                    <i class="fa-solid fa-external-link"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
 
-          <div id="console-input-container">
-            <label for="console-input"></label>
-            <input
-              type="text"
-              name="console_input"
-              id="console-input"
-              title="Console Input"
-              placeholder="Type your question here..."
-            />
+            <div class="project-card glass-card coming-soon" data-aos="flip-left" data-aos-delay="200">
+              <div class="project-front">
+                <div class="project-icon">
+                  <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h3>Coming Soon</h3>
+                <p class="project-tech">More projects in development</p>
+              </div>
+              <div class="project-back">
+                <h3>More Coming</h3>
+                <p>
+                  Currently working on exciting new projects including Poolio, 
+                  a group-based savings and investing platform. Stay tuned!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="section education-section">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">
+            My <span class="gradient-text">Education</span>
+          </h2>
+          <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <h3>Computer Science Career Path</h3>
+                <p class="timeline-date">Codecademy</p>
+                <p>
+                  Built a strong foundation in programming with Python, learned essential 
+                  data structures, algorithms, databases with PostgreSQL, computer architecture, 
+                  and discrete mathematics.
+                </p>
+                <a href="./resources/images/CompSciCertificate.pdf" target="_blank" class="btn-small">
+                  <i class="fa-solid fa-certificate"></i> View Certificate
+                </a>
+              </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <h3>Full-Stack Engineer Career Path</h3>
+                <p class="timeline-date">Codecademy - In Progress</p>
+                <p>
+                  Currently expanding my skills in full-stack JavaScript development, 
+                  including React, Node.js, Express, and modern web technologies.
+                </p>
+              </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <h3>Intermediate Python 3</h3>
+                <p class="timeline-date">Codecademy</p>
+                <p>
+                  Deepened understanding of Python with advanced functions, OOP, 
+                  unit testing, iterators, generators, and context managers.
+                </p>
+                <a href="./resources/images/IntermediatePythonCertificate.pdf" target="_blank" class="btn-small">
+                  <i class="fa-solid fa-certificate"></i> View Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section skills-section">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">
+            Technical <span class="gradient-text">Skills</span>
+          </h2>
+          <div class="skills-grid">
+            <div class="skill-card glass-card" data-aos="zoom-in">
+              <i class="fa-brands fa-python"></i>
+              <h3>Python</h3>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="50">
+              <i class="fa-brands fa-js"></i>
+              <h3>JavaScript</h3>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+              <i class="fa-solid fa-code"></i>
+              <h3>React</h3>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="150">
+              <i class="fa-brands fa-html5"></i>
+              <h3>HTML5</h3>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+              <i class="fa-brands fa-css3-alt"></i>
+              <h3>CSS3</h3>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="250">
+              <i class="fa-solid fa-database"></i>
+              <h3>PostgreSQL</h3>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+              <i class="fa-brands fa-git"></i>
+              <h3>Git</h3>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="350">
+              <i class="fa-solid fa-terminal"></i>
+              <h3>Terminal</h3>
+              <div class="skill-level">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">
+            Get In <span class="gradient-text">Touch</span>
+          </h2>
+          <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Let's connect and build something amazing together
+          </p>
+          <div class="contact-links" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://www.linkedin.com/in/aaron-dykes-/" class="contact-link glass-card" title="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/CodeWizardX1" class="contact-link glass-card" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:aaronmdykes@gmail.com" class="contact-link glass-card" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Terminal Section -->
+      <section id="terminal" class="section terminal-section">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">
+            Developer <span class="gradient-text">Terminal</span>
+          </h2>
+          <div class="terminal-container glass-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="terminal-btn close"></span>
+                <span class="terminal-btn minimize"></span>
+                <span class="terminal-btn maximize"></span>
+              </div>
+              <span class="terminal-title">aaron@portfolio:~$</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+              <div class="terminal-line">
+                <span class="terminal-prompt">$</span>
+                <span class="terminal-text">Welcome to Aaron's Developer Terminal!</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-prompt">$</span>
+                <span class="terminal-text">Type 'help' for available commands</span>
+              </div>
+            </div>
+            <div class="terminal-input-line">
+              <span class="terminal-prompt">$</span>
+              <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" />
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>Made with <i class="fa-solid fa-heart"></i> in Boston, MA</p>
+    <footer class="footer">
+      <div class="container">
+        <p>Made with <i class="fa-solid fa-heart"></i> in Boston, MA</p>
+        <p class="footer-copyright">&copy; 2024 Aaron M. Dykes. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>

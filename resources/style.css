@@ -1001,7 +1001,8 @@ body.loaded .hero-section {
 
 @media (max-width: 768px) {
   .glass-header {
-    padding: 1rem;
+    padding: 1rem 2rem;
+    justify-content: space-between;
   }
   
   .nav-items {
@@ -1015,7 +1016,7 @@ body.loaded .hero-section {
     justify-content: center;
     align-items: center;
     transition: right 0.3s ease;
-    z-index: 9997;
+    z-index: 998;
   }
   
   .nav-items.active {
@@ -1024,6 +1025,8 @@ body.loaded .hero-section {
   
   .hamburger {
     display: flex;
+    position: relative;
+    z-index: 9999;
   }
   
   .hero-cta {
@@ -1088,8 +1091,8 @@ body.loaded .hero-section {
   
   /* Increase header z-index for mobile */
   .glass-header {
-    z-index: 9998;
-    padding: 0.75rem 1rem;
+    z-index: 999;
+    /* padding: 0.75rem 2rem; */
   }
   
   /* Adjust logo size for small screens */
